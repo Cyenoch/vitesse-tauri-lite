@@ -3,7 +3,7 @@
   windows_subsystem = "windows"
 )]
 
-use tauri::{App, Manager, WebviewAttributes};
+use tauri::{App, Manager};
 
 #[tokio::main]
 async fn main() {
@@ -13,7 +13,7 @@ async fn main() {
     .expect("error while running tauri application");
 }
 
-pub fn init(app: &mut App) -> std::result::Result<(), Box<dyn std::error::Error + Send>> {
-  let win = app.get_window("main").unwrap();
+pub fn init(app: &mut App) -> std::result::Result<(), Box<dyn std::error::Error>> {
+  let _win = app.get_window("main").unwrap();
   Ok(())
 }
