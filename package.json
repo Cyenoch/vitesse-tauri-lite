@@ -1,0 +1,75 @@
+{
+  "name": "vitesse-tauri-lite",
+  "version": "0.0.1",
+  "description": "",
+  "license": "MIT",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/cyenoch/vitesse-tauri-lite"
+  },
+  "keywords": [
+    "vite",
+    "tauri",
+    "vue",
+    "vitesse",
+    "vitesse-lite",
+    "antfu",
+    "desktop"
+  ],
+  "scripts": {
+    "dev": "tauri dev",
+    "serve": "vite --port 8080",
+    "serve:native": "VITE_HTTP_HANDLER=NATIVE vite --port 8080",
+    "serve:tauri": "tauri dev",
+    "build:web": "vite build",
+    "build": "VITE_HTTP_HANDLER=NATIVE vite build && tauri build",
+    "typecheck": "vue-tsc --noEmit",
+    "preview:web": "vite preview",
+    "lint": "eslint .",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@mdi/font": "6.9.96",
+    "@tauri-apps/api": "1.0.2",
+    "@vueuse/core": "^8.9.2",
+    "pinia": "^2.0.16",
+    "roboto-fontface": "0.10.0",
+    "vue": "^3.2.37",
+    "vue-router": "^4.1.2"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.25.2",
+    "@iconify-json/carbon": "^1.1.6",
+    "@tauri-apps/cli": "1.0.3",
+    "@types/node": "^18.0.3",
+    "@unocss/reset": "^0.44.1",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "@vue/test-utils": "^2.0.2",
+    "eslint": "^8.19.0",
+    "jsdom": "^20.0.0",
+    "pnpm": "^7.5.1",
+    "typescript": "^4.7.4",
+    "unocss": "^0.44.1",
+    "unplugin-auto-import": "^0.9.2",
+    "unplugin-vue-components": "^0.21.1",
+    "vite": "^2.9.14",
+    "vitest": "^0.18.0",
+    "vue-tsc": "^0.38.5"
+  },
+  "eslintConfig": {
+    "extends": "@antfu",
+    "rules": {
+      "no-console": "off",
+      "dot-notation": "off",
+      "vue/no-useless-v-bind": "off"
+    },
+    "ignorePatterns": [
+      "src-tauri/*",
+      "dist/*",
+      "node_modules/*",
+      ".vscode",
+      ".github",
+      ".git"
+    ]
+  }
+}
