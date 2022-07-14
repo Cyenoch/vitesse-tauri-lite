@@ -1,17 +1,46 @@
 # Vite Tauri Template
 This is a starter template for those who want to make a desktop application with web technologies. This template uses the below stack.
 
-## Vite.js
-[Vite.js](https://vitejs.dev/) is a new modern bundler for javascript which is blazing fast and includes many sensible defaults.
-
 ## Tauri
 [Tauri](https://tauri.studio/) is a new modern technology to turn your web apps into a desktop app for multiple platforms (Windows, MacOS, Linux, android and ios soon). Tauri apps have very small file size and tiny memory consumption.
 
-## Vue 3
-[Vue.js](https://vuejs.org/) is an incremental frontend framework which is an absolute joy to work with. It has seen very impressive improvements in version 3 including Composition Api, script setup, dynamic css binding and ... .
+## vitesse-lite
+[vitesse-lite](vhttps://github.com/antfu/vitesse-lit) Lightweight version of Vitesse
 
-### Bonus: Vue Global Api
-[Vue Global Api](https://github.com/antfu/vue-global-api) globally registers commonly used composition api functions such as `ref`, `reactive` and ... . makes your `script setup` sections cleaner.
+### Vite.js
+[Vite.js](https://vitejs.dev/) is a new modern bundler for javascript which is blazing fast and includes many sensible defaults.
+
+### Features
+
+- ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite 3](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [ESBuild](https://github.com/evanw/esbuild) - born with fastness
+
+- 📦 [Components auto importing](./src/components)
+
+- 🎨 [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
+
+- 😃 Use icons from any icon sets in [Pure CSS](https://github.com/antfu/unocss/tree/main/packages/preset-icons)
+
+- 🔥 Use the [new `<script setup>` style](https://github.com/vuejs/rfcs/pull/227)
+
+- 🦾 TypeScript, of course
+
+### Pre-packed
+
+#### UI Frameworks
+
+- [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
+
+#### Icons
+
+- [Iconify](https://iconify.design) - use icons from any icon sets [🔍Icônes](https://icones.netlify.app/)
+- [Pure CSS Icons via UnoCSS](https://github.com/antfu/unocss/tree/main/packages/preset-icons)
+
+#### Plugins
+
+- [Vue Router](https://github.com/vuejs/vue-router)
+- [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import) - Directly use Vue Composition API and others without importing
+- [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) - components auto import
+- [VueUse](https://github.com/antfu/vueuse) - collection of useful composition APIs
 
 ## Installation
 - Ready your workspace according to tauri. [Tauri Getting Started](https://tauri.studio/v1/guides/getting-started/prerequisites)

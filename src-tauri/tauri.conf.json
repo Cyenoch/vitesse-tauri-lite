@@ -1,6 +1,6 @@
 {
   "package": {
-    "productName": "vite-tauri-template",
+    "productName": "vitesse-tauri-lite",
     "version": "0.1.0"
   },
   "build": {
@@ -53,15 +53,12 @@
     },
     "windows": [
       {
-        "title": "Vite Tauri Template",
-        "width": 800,
-        "height": 600,
+        "title": "Vitesse Lite Tauri Template",
+        "width": 1280,
+        "height": 850,
         "resizable": true,
         "fullscreen": false
       }
-    ],
-    "security": {
-      "csp": ""
-    }
+    ]
   }
 }
